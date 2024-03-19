@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+
+/* COLORS
+
+-------------- Blue color
+#007AFF - lightest
+#0E62BF - lighter
+#0C4C93 - light
+
+-------------- Gray color
+#212529
+#343a40
+#495057
+*/
