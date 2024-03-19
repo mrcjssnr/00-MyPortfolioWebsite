@@ -3,16 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="description"
+      content="My own portfolio website for my web design/development clients"
+    />
     <title>Portfolio</title>
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="nav_bar">nav_bar</nav>
+    <nav class="nav container">
+      <div class="nav__title">My Portfolio</div>
+      <div class="nav__menu">
+        <ul class="nav__menu__list">
+          <li><a href="#" class="nav__menu__link">Home</a></li>
+          <li><a href="#" class="nav__menu__link">About</a></li>
+          <li><a href="#" class="nav__menu__link">Works</a></li>
+          <li><a href="#" class="nav__menu__link btn">Let's Talk</a></li>
+        </ul>
+      </div>
+    </nav>
+
     <main>
-      <section class="hero">hero</section>
-      <section class="about-Me">about-Me</section>
+      <section class="hero grid grid__column--2">
+        <div class="hero__image-box">
+          <div class="hero__img"></div>
+        </div>
+        <div class="hero__text-box">
+          Where does it come from? Contrary to popular belief, Lorem Ipsum is
+          not simply random text. It has roots in a piece of classical Latin
+          literature from 45 BC, making it over 2000 years old. Richard
+          McClintock, a Latin professor at Hampden-Sydney College in Virginia,
+          looked up one of the more obscure Latin words, consectetur, from a
+          Lorem Ipsum passage, and going through the cites of the word in
+          classical literature, discovered the undoubtable source. Lorem Ipsum
+          comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et
+          Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.
+          This book is a treatise on the theory of ethics, very popular during
+          the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit
+          amet..", comes from a line in section 1.10.32. The standard chunk of
+          Lorem Ipsum used since the 1500s is reproduced below for those
+          interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et
+          Malorum" by Cicero are also reproduced in their exact original form,
+          accompanied by English versions from the 1914 translation by H.
+          Rackham.
+        </div>
+      </section>
+
+      <section class="aboutMe">about-Me</section>
       <section class="projects">projects</section>
-      <section class="contact-me">contact-me</section>
+      <section class="contactMe">contact-me</section>
     </main>
     <footer>&copy;</footer>
   </body>

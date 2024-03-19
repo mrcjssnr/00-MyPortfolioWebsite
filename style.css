@@ -8,6 +8,157 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  font-family: "lato", sans-serif;
+  font-weight: 400;
+  color: #555;
+}
+
+/***************************************/
+/* GENERAL */
+/***************************************/
+
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+/*******************************************/
+/* REUSABLE GRID */
+/*******************************************/
+.grid {
+  display: grid;
+}
+
+.grid__column--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid__row--2 {
+  grid-template-rows: repeat(2, 1fr);
+}
+
+/***************************************/
+/* NAVIGATION BAR */
+/***************************************/
+.nav {
+  display: flex;
+  padding: 5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  animation: moveInRight 1s;
+}
+
+@keyframes moveInRight {
+  0% {
+    transform: translateX(-20rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.nav__menu__list {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  list-style: none;
+}
+
+.nav__menu__link:link,
+.nav__menu__link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #212529;
+  animation: opaque 2s;
+
+  transition: all 0.3s;
+}
+
+@keyframes opaque {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.nav__menu__link:hover,
+.nav__menu__link:active {
+  text-shadow: 1rem 1rem 1rem;
+  color: #007aff;
+  transform: translate(-0.1rem, -0.1rem);
+}
+
+.nav__menu__link.btn:link,
+.nav__menu__link.btn:visited {
+  padding: 1rem 3.2rem;
+  background-color: #007aff;
+  color: #fff;
+  border-radius: 1.6rem;
+  border: 1px solid #555;
+}
+
+.nav__menu__link.btn:hover,
+.nav__menu__link.btn:active {
+  text-shadow: 0 0 0;
+  box-shadow: 1rem 1rem 0.5rem #007bff52;
+}
+
+/***************************************/
+/* HERO SECTION (IMAGE BOX SECTION) */
+/***************************************/
+.hero {
+  height: 100%;
+  width: 100%;
+}
+
+.hero__image-box {
+  padding: 10rem;
+}
+
+.hero__img {
+  height: 60rem;
+  width: 50rem;
+  background-image: url(./img/NERI\,\ MARCO\ JESUS\ G\ \(NO\ BACKGROUND\).png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 69% 31% 25% 75% / 30% 8% 92% 70%;
+  border: 1px solid #343a40;
+  filter: drop-shadow(10rem 2rem 8rem rgb(0, 123, 255));
+  animation: scale 0.6s ease-in-out 1s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes scale {
+  0% {
+    scale: 0;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+
+/***************************************/
+/* HERO SECTION (text BOX SECTION) */
+/***************************************/
+
+/* ************************************************************************************** */
+/* ************************************************************************************** */
+/* ************************************************************************************** */
 
 /* COLORS
 
