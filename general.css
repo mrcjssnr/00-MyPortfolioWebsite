@@ -1,0 +1,115 @@
+/* COLORS
+
+-------------- Blue color
+#007AFF - lightest
+#0E62BF - lighter
+#0C4C93 - light
+
+-------------- Gray color
+#212529
+#343a40
+#495057
+*/
+
+/***************************************/
+/* BASIC RESET */
+/***************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "lato", sans-serif;
+  font-weight: 400;
+  color: #555;
+  background: linear-gradient(#fff, #888);
+}
+
+/***************************************/
+/* GENERAL */
+/***************************************/
+
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.container--2 {
+  max-width: 160rem;
+  margin: 0 auto;
+}
+
+/*******************************************/
+/* REUSABLE GRID */
+/*******************************************/
+.grid {
+  display: grid;
+}
+
+.grid__column--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid__row--2 {
+  grid-template-rows: repeat(2, 1fr);
+}
+
+/*******************************************/
+/* KEYFRAMES */
+/*******************************************/
+
+@keyframes moveInRight {
+  0% {
+    transform: translateX(-20rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    transform: translateX(20rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes opaque {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scale {
+  0% {
+    scale: 0;
+    opacity: 0;
+  }
+
+  80% {
+    scale: 1.2;
+  }
+
+  100% {
+    scale: 1;
+    opacity: 1;
+  }
+}

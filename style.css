@@ -1,63 +1,3 @@
-/* COLORS
-
--------------- Blue color
-#007AFF - lightest
-#0E62BF - lighter
-#0C4C93 - light
-
--------------- Gray color
-#212529
-#343a40
-#495057
-*/
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "lato", sans-serif;
-  font-weight: 400;
-  color: #555;
-  background: linear-gradient(to right bottom, #fff, #444);
-}
-
-/***************************************/
-/* GENERAL */
-/***************************************/
-
-.container {
-  max-width: 130rem;
-  margin: 0 auto;
-  padding: 0 3.2rem;
-}
-
-.container--2 {
-  max-width: 160rem;
-  margin: 0 auto;
-}
-
-/*******************************************/
-/* REUSABLE GRID */
-/*******************************************/
-.grid {
-  display: grid;
-}
-
-.grid__column--2 {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.grid__row--2 {
-  grid-template-rows: repeat(2, 1fr);
-}
-
 /***************************************/
 /* NAVIGATION BAR */
 /***************************************/
@@ -74,18 +14,7 @@ body {
   font-size: 2.4rem;
   font-weight: 700;
   animation: moveInRight 1s ease-out;
-  letter-spacing: .5rem;
-}
-
-@keyframes moveInRight {
-  0% {
-    transform: translateX(-20rem);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateX(0);
-  }
+  letter-spacing: 0.5rem;
 }
 
 .nav__menu__list {
@@ -95,7 +24,7 @@ body {
   font-size: 1.6rem;
   font-weight: 600;
   list-style: none;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 
 .nav__menu__link:link,
@@ -105,16 +34,6 @@ body {
   animation: opaque 2s;
   color: #555;
   transition: all 0.3s;
-}
-
-@keyframes opaque {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
 }
 
 .nav__menu__link:hover {
@@ -129,44 +48,43 @@ body {
   background-color: #007aff;
   color: #fff;
   border-radius: 2rem;
-  border: 1px solid #0E62BF;
+  border: 1px solid #0e62bf;
 }
 
 .nav__menu__link.btn:hover {
   text-shadow: 0 0 0;
-  box-shadow: .2rem .5rem 2rem .3rem rgba(0, 123, 255, 0.644);
+  box-shadow: 0.2rem 0.5rem 2rem 0.3rem rgba(0, 123, 255, 0.644);
 }
 
-.nav__menu__link:active{
+.nav__menu__link:active {
   transform: translate(0rem, 0rem);
   text-shadow: 0rem 0rem 1rem;
 }
 
 .nav__menu__link.btn:active {
   transform: translate(0rem, 0rem);
-  box-shadow: .2rem .5rem 5rem .3rem rgba(0, 123, 255, 0.644);
-  background-color: #0E62BF ;
+  box-shadow: 0.2rem 0.5rem 5rem 0.3rem rgba(0, 123, 255, 0.644);
+  background-color: #0e62bf;
   color: #eee;
 }
-
 
 /***************************************/
 /* HERO SECTION (IMAGE BOX SECTION) */
 /***************************************/
 .hero {
-  height: 100%;
-  width: 100%;
-  justify-content: center;
   align-items: center;
 }
 
 .hero__image-box {
+  width: 100%;
   padding: 10rem;
+  justify-content: center;
+  display: flex;
 }
 
 .hero__img {
-  height: 60rem;
-  width: 50rem;
+  padding-bottom: 100%;
+  width: 80%;
   background-image: url(./img/NERI\,\ MARCO\ JESUS\ G\ \(NO\ BACKGROUND\).png);
   background-position: center;
   background-size: cover;
@@ -183,53 +101,53 @@ body {
   filter: drop-shadow(10rem 2rem 4rem #007bff);
 }
 
-@keyframes scale {
-  0% {
-    scale: 0;
-    opacity: 0;
-  }
-
-  80% {
-    scale: 1.2;
-  }
-
-  100% {
-    scale: 1;
-    opacity: 1;
-  }
-}
-
 /***************************************/
 /* HERO SECTION (text BOX SECTION) */
 /***************************************/
 
 .hero__text-box {
   padding: 10rem;
+  align-self: center;
 }
 
-.hero__text-box--title {
-  text-shadow: 4rem 2rem 1.8rem #007AFF ;
+.hero__text--title {
+  text-shadow: 4rem 2rem 1.8rem #007aff;
   animation: opaque 2s;
   font-size: 5.2rem;
+  font-weight: 900;
 }
 
-.hero__text-box--name {
+.hero__text--name {
   color: rgba(0, 123, 255, 0.6);
   font-size: 1.6rem;
   font-weight: 600;
   animation: moveInLeft 1s ease-out;
 }
 
-@keyframes moveInLeft {
-  0% {
-    transform: translateX(20rem);
-    opacity: 0;
-  }
 
-  100% {
-    transform: translateX(0);
-  }
+.section__tech-stacks {
+  margin-top: 24rem;
 }
+
+.tech-stacks__text {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  opacity: 0.8;
+}
+
+.tech-stacks__logo {
+  height: 3rem;
+  width: 3rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  transition: all 0.3s;
+  position: relative;
+}
+
+/***************************************/
+/* TECH_StACKS SECTION */
+/***************************************/
 
 /* ************************************************************************************** */
 /* ************************************************************************************** */
