@@ -124,16 +124,20 @@
   animation: moveInLeft 1s ease-out;
 }
 
+/***************************************/
+/* TECH_StACKS SECTION */
+/***************************************/
 
 .section__tech-stacks {
   margin-top: 24rem;
 }
 
 .tech-stacks__text {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
-  font-weight: 700;
-  opacity: 0.8;
+  font-weight: 900;
+  opacity: 0.6;
+  letter-spacing: normal;
 }
 
 .tech-stacks__logo {
@@ -146,8 +150,55 @@
 }
 
 /***************************************/
-/* TECH_StACKS SECTION */
+/* FOOTER SECTION */
 /***************************************/
+
+footer {
+  background-color: #28242c;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  padding: 2.4rem 0;
+}
+
+.footer-container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 1.6rem 3.2rem;
+  border-top: 1px solid #495057;
+  display: flex;
+  justify-content: space-between;
+  color: #dee2e6;
+}
+
+.footer__logo--brand {
+  font-size: 1.4rem;
+}
+
+.footer__list {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.footer__list--items {
+  list-style: none;
+}
+
+.footer__icons {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.footer__icons--link:link,
+.footer__icons--link:visited {
+  color: #dee2e6;
+  transition: all 0.3s;
+  display: flex;
+}
+
+.footer__icons--link:hover,
+.footer__icons--link:active {
+  scale: 2;
+  color: #007aff;
+}
 
 /* ************************************************************************************** */
 /* ************************************************************************************** */
@@ -161,7 +212,11 @@
 #0C4C93 - light
 
 -------------- Gray color
+#1a1d20
+#28242c
 #212529
 #343a40
 #495057
+#dee2e6
+
 */
