@@ -1,6 +1,9 @@
 /***************************************/
 /* NAVIGATION BAR */
 /***************************************/
+.header-nav {
+  background: linear-gradient(#007aff, #fff);
+}
 
 .nav {
   display: flex;
@@ -13,6 +16,7 @@
 .nav__title {
   font-size: 2.4rem;
   font-weight: 700;
+  color: #333;
   animation: moveInRight 1s ease-out;
   letter-spacing: 0.5rem;
 }
@@ -32,13 +36,13 @@
   display: inline-block;
   text-decoration: none;
   animation: opaque 2s;
-  color: #555;
+  color: #333;
   transition: all 0.3s;
 }
 
 .nav__menu__link:hover {
   text-shadow: 1rem 1rem 1rem;
-  color: #007aff;
+  color: #333;
   transform: translate(-0.1rem, -0.1rem);
 }
 
@@ -53,12 +57,12 @@
 
 .nav__menu__link.btn:hover {
   text-shadow: 0 0 0;
-  box-shadow: 0.2rem 0.5rem 2rem 0.3rem rgba(0, 123, 255, 0.644);
+  box-shadow: 0.2rem 0.5rem 2rem #444;
 }
 
 .nav__menu__link:active {
   transform: translate(0rem, 0rem);
-  text-shadow: 0rem 0rem 1rem;
+  text-shadow: 0rem 0rem 1rem rgba(0, 123, 255, 0.644);
 }
 
 .nav__menu__link.btn:active {
