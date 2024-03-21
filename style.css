@@ -166,6 +166,7 @@ footer {
   border-top: 1px solid #495057;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: #dee2e6;
 }
 
