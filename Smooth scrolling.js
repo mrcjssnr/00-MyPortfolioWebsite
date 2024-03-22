@@ -1,3 +1,15 @@
+/////////////// Make mobile navigation work
+
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const navEl = document.querySelector(".nav");
+
+btnNavEl.addEventListener("click", function () {
+  navEl.classList.toggle("nav-open");
+});
+
+
+/////////////// making smooth scrolling work
+
 const allLinks = document.querySelectorAll("a:link");
 
 allLinks.forEach(function (link) {
@@ -20,8 +32,36 @@ allLinks.forEach(function (link) {
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
 
-    /* // Close mobile naviagtion
-    if (link.classList.contains("main-nav-link"))
-      headerEl.classList.toggle("nav-open"); */
+    // Close mobile naviagtion
+    if (link.classList.contains("nav__menu__link"))
+      navEl.classList.toggle("nav-open");
   });
 });
+
+
+/////////////// Sticky navigation
+
+const sectionHeroEl = document.querySelector(".hero");
+const header = document.querySelector(".header-nav");
+
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    console.log(ent);
+
+    if (ent.isIntersecting === false) {
+      header.classList.add("sticky");
+    }
+
+    if (ent.isIntersecting === true) {
+      header.classList.remove("sticky");
+    }
+  },
+  {
+    // In the viewport
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px",
+  }
+);
+obs.observe(sectionHeroEl);
