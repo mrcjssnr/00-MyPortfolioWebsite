@@ -47,6 +47,10 @@
 
 /* below 912px (Landscape tablets)*/
 @media (max-width: 57em) {
+  html {
+    font-size: 56.25%;
+  }
+
   .nav__menu {
     background-color: rgba(255, 255, 255, 0.7);
     position: fixed;
@@ -75,7 +79,9 @@
   }
 
   .btn-mobile-nav {
-    display: block;
+    display: flex;
+    z-index: 12;
+    align-items: center;
   }
 
   .nav-open .nav__menu {
@@ -86,7 +92,7 @@
   }
 
   .nav-open .icon-mobile-nav[name="close-outline"] {
-    display: inline-block;
+    display: block;
   }
 
   .nav-open .icon-mobile-nav[name="menu-outline"] {
@@ -97,7 +103,7 @@
     flex-direction: column;
     gap: 4.8rem;
   }
-  
+
   .hero {
     grid-template-columns: 1fr;
     text-align: center;
@@ -139,6 +145,19 @@
 
 /* below 704px (Smaller Tablets) */
 @media (max-width: 44em) {
+  html {
+    font-size: 50%;
+  }
+
+  .nav {
+    padding: 1.6rem;
+  }
+
+  .icon-mobile-nav {
+    height: 4rem;
+    width: 4rem;
+  }
+
   .hero {
     margin: 4.8rem auto 4.8rem;
   }
@@ -158,16 +177,16 @@
 
 /* below 600px (phone) */
 @media (max-width: 34em) {
-.section__tech-stacks {
+  .nav__title {
+    letter-spacing: 0;
+  }
+
+  .section__tech-stacks {
     margin-top: 8rem;
-}
+  }
 
   .aboutMe {
     padding: 2.4rem;
-  }
-
-  .about__paragraph--container {
-    font-size: 1.2rem;
   }
 
   .about__paragraph {
